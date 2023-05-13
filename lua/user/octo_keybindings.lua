@@ -1,6 +1,7 @@
 local git_mappings = lvim.builtin.which_key.mappings["g"]
 
 git_mappings["F"] = { "<cmd>Octo search<cr>", "Find any (issues, Pull Requests, etc.)" }
+git_mappings["O"] = { "<cmd>Octo actions<cr>", "See Octo Actions" }
 
 git_mappings["i"] = {
   name = "Issue",
@@ -31,8 +32,18 @@ git_mappings["p"] = {
   S = { "<cmd>Octo pr checks<cr>", "Show the status of all checks" },
   L = { "<cmd>Octo pr reload<cr>", "Reload Pull Request" },
   b = { "<cmd>Octo pr browser<cr>", "Open Pull Request in browser" },
-  u = { "<cmd>Octo pr url<cr>", "Copy URL Pull Request to clipboard" },
-  U = { "<cmd>Octo reviewer add<cr>", "Assign a Pull Request reviewer" }
+  U = { "<cmd>Octo pr url<cr>", "Copy URL Pull Request to clipboard" },
+  u = {
+    name = "Review",
+    u = { "<cmd>Octo reviewer add<cr>", "Assign a Pull Request reviewer" },
+    s = { "<cmd>Octo review start<cr>", "Start a new review" },
+    S = { "<cmd>Octo review submit<cr>", "Submit the review" },
+    r = { "<cmd>Octo review resume<cr>", "Edit a pending review for current Pull Request" },
+    d = { "<cmd>Octo review discard<cr>", "Deletes a pending review for current Pull Request" },
+    c = { "<cmd>Octo review comments<cr>", "View pending review comments" },
+    C = { "<cmd>Octo review commit<cr>", "Pick a specific commit to review" },
+    x = { "<cmd>Octo review close<cr>", "Close the review window and return to the Pull Request" }
+  }
 }
 git_mappings["x"] = {
   name = "Repository",
