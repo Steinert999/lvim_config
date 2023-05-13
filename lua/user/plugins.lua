@@ -30,5 +30,8 @@ lvim.plugins = {
     config = function()
       require("octo").setup()
     end
-  }
+  },
+  { "preservim/nerdtree" },
+  { "ryanoasis/vim-devicons" },
+  { "Xuyuanp/nerdtree-git-plugin" },
 }

@@ -15,6 +15,3 @@ function load_user_config_files()
 end
 
 load_user_config_files()
-
-lvim.builtin.nvimtree.setup.view.side = "left"
-lvim.builtin.nvimtree.setup.renderer.icons.show.git = false
