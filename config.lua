@@ -1,3 +1,4 @@
+vim.cmd("set encoding=UTF-8")
 local lfs = require "lfs"
 local user_config_dir = os.getenv("LVIM_PATH") .. "/lua/user"
 

@@ -17,10 +17,6 @@ lvim.plugins = {
     end
   },
   {
-    "sindrets/diffview.nvim",
-    event = "BufRead"
-  },
-  {
     "pwntester/octo.nvim",
     dependencies = {
       "nvim-lua/plenary.nvim",
@@ -34,4 +30,7 @@ lvim.plugins = {
   { "preservim/nerdtree" },
   { "ryanoasis/vim-devicons" },
   { "Xuyuanp/nerdtree-git-plugin" },
+  {
+    "f-person/git-blame.nvim"
+  }
 }
