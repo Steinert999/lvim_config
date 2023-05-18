@@ -32,5 +32,6 @@ lvim.plugins = {
   { "Xuyuanp/nerdtree-git-plugin" },
   {
     "f-person/git-blame.nvim"
-  }
+  },
+
 }
