@@ -1,9 +1,11 @@
-lvim.log.level = "info"
-lvim.format_on_save = { enabled = true, timeout = 1000 }
-lvim.leader = "space"
-lvim.colorscheme = "dracula"
-lvim.builtin.alpha.active = true
-lvim.builtin.alpha.mode = "dashboard"
-lvim.builtin["terminal"].active = "true"
-lvim.builtin["terminal"].open_mapping = "<C-t>"
-lvim.builtin.treesitter.auto_install = true
+vim.opt.relativenumber = true
+vim.opt.shiftwidth = 2
+vim.opt.tabstop = 2
+vim.opt.cmdheight = 2
+vim.opt.wrap = true
+vim.opt.showtabline = 0
+
+lvim.format_on_save.enabled = true
+
+lvim.builtin.breadcrumbs.options.depth_limit = 1
+lvim.builtin.breadcrumbs.options.depth_limit_indicator = "..."
